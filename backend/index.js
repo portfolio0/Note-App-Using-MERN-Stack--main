@@ -20,8 +20,8 @@ const app = express();
 // to make input as json
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ origin: ["http://localhost:5173","http://localhost:5173",                   // local dev
-  "https://notethought-frontend.onrender.com], credentials: true }));
+app.use(cors({ origin: ["http://localhost:5173",
+  "https://notethought-frontend.onrender.com"], credentials: true }));
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
